@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body::-webkit-scrollbar {
+    width: 8px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: base-100;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #22d3ee;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+  }
+
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #22d3ee black;
+  }
+  
+  /* inViewport */
+  
+  [data-inviewport="scale-in"] { 
+    transition: 1s;
+    transform: scale(0.1);
+  }
+  [data-inviewport="scale-in"].is-inViewport { 
+    transform: scale(1);
+  }
+  
+  [data-inviewport="fade-in"] { 
+    transition: 3s;
+    opacity: 0;
+  }
+  [data-inviewport="fade-in"].is-inViewport { 
+    opacity: 1;
+  }
