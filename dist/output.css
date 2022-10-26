@@ -1846,10 +1846,13 @@ html {
   background-position: center;
 }
 
+<<<<<<< HEAD
 .fill-current {
   fill: currentColor;
 }
 
+=======
+>>>>>>> fd20c2d6737ed10b2ad2f8054a6ec6f926f7e030
 .p-2 {
   padding: 0.5rem;
 }
