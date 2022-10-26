@@ -1561,6 +1561,10 @@ html {
   background-attachment: fixed;
 }
 
+.bg-center {
+  background-position: center;
+}
+
 .p-2 {
   padding: 0.5rem;
 }
